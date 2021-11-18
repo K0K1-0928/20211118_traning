@@ -10,6 +10,6 @@ public class GreetingController {
     
     @PostMapping("/api/greeting")
     public GreetingResponse greeting(@Validated @RequestBody GreetingRequest request) {
-        return new GreetingResponse("Hello" + request.getName() + "!");
+        return new GreetingResponse("Hello " + request.getName() + "!");
     }
 }
